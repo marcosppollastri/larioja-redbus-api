@@ -18,4 +18,4 @@ ADD . .
 # Compile the main app so that it doesn't need to be compiled each startup/entry.
 RUN deno cache src/app.ts
 
-CMD ["run", "--allow-net", "src/app.ts"]
+CMD ["deno", "task", "start"]
