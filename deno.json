@@ -3,6 +3,10 @@
     "@root/": "./"
   },
   "tasks": {
-    "dev": "deno run --allow-net --watch src/app.ts"
+    "start": "deno run --allow-net src/app.ts",
+    "dev": "deno run --allow-net --watch src/app.ts",
+    "docker": "deno task docker:build && deno task docker:run",
+    "docker:build": "docker build -t riojabus-api .",
+    "docker:run": "docker run -it --init -p 8000:8000 riojabus-api:latest"
   }
 }
