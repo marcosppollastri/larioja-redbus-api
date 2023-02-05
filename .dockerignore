@@ -1,0 +1,8 @@
+./test
+./deps_dev
+# Ignore all log files
+*.log
+
+# Ignore local cache and lock files
+.deno_plugins.lock
+.deno_plugins.toml

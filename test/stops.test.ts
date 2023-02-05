@@ -1,5 +1,5 @@
 import { superoak } from "../deps_dev.ts"
-import {app} from "@root/src/app.ts"
+import { app } from "@root/src/app.ts"
 import { stopsMocks } from "./mocks/stops.mock.ts";
 
 Deno.test("it should return stops", async () => {

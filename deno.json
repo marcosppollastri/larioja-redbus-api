@@ -3,6 +3,13 @@
     "@root/": "./"
   },
   "tasks": {
-    "dev": "deno run --allow-net --watch src/app.ts"
+    "start": "deno run --allow-net src/app.ts",
+    "dev": "deno run --allow-net --watch src/app.ts",
+    "test": "deno test -A --coverage=.coverage",
+    "coverage": "deno task test && deno coverage .coverage",
+    "coverage:html": "deno coverage .coverage --lcov --output=.coverage/.coverage.lcov && genhtml -o .coverage/html .coverage/.coverage.lcov",
+    "docker": "deno task docker:build && deno task docker:run",
+    "docker:build": "docker build -t riojabus-api .",
+    "docker:run": "docker run -it --init -p 8000:8000 riojabus-api:latest"
   }
 }
