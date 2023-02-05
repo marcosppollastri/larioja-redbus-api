@@ -29,3 +29,5 @@ build/
 
 # Deno specific files
 .deno_plugins.ts
+
+.coverage
