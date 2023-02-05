@@ -10,4 +10,6 @@ app.use(stopsRouter.allowedMethods());
 
 // Start the server
 console.log("Listening on http://localhost:8000");
-await app.listen({ port: 8000 });
+app.listen({ port: 8000 });
+
+export {app}

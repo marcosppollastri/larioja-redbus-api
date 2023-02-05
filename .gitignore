@@ -20,10 +20,6 @@ build/
 .vscode/
 .idea/
 
-# Tests
-__tests__/
-*.test.*
-
 # Miscellaneous
 .DS_Store
 .env.local
