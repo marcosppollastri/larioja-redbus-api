@@ -1,0 +1,8 @@
+{
+  "imports": {
+    "@root/": "./"
+  },
+  "tasks": {
+    "dev": "deno run --allow-net --watch src/app.ts"
+  }
+}
